@@ -1,12 +1,6 @@
 pipeline {
     agent any
-
     stages {
-        stage(git) {
-           steps {
-             sh 'yum install git -y'
-          }
-      }
         stage('Build') {
             steps {
                 echo 'Building..'
